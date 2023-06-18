@@ -14,8 +14,8 @@
 }
 body {
   font-family: "Outfit", sans-serif;
-  -moz-box-shadow: 0 0 5px / 0.7 var(--Dark_blue);
-  -webkit-box-shadow: 0 0 5px / 0.7 var(--Dark_blue);
+  -moz-box-shadow: 0 0 5px  0.7 var(--Dark_blue);
+  -webkit-box-shadow: 0 0 5px  0.7 var(--Dark_blue);
 }
 .wrapper {
   width: 100%;
