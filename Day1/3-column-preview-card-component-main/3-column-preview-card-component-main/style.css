@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap');
+:root{
+  --brightOrange : hsl(31, 77%, 52%);
+  --darkCyan : hsl(184, 100%, 22%);
+  --veryDarkCyan : hsl(179, 100%, 13%);
+  --transparentWhite : hsla(0, 0%, 100%, 0.75);
+  --veryLightGray :hsl(31,8%,99%);
+  /* --headingColor1 : hsl(31,8%,99%); */
+  --veryLighgtGrayBtn : hsl(0, 0%, 95%);
+   font-size: 16px;
+}
+body{
+  font-family: 'Lexend Deca' , sans-serif;
+}
+.attribution {
+  margin-block : 1rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.container{
+ 
+  width: 100%;
+  height: 90vh;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+.container > div{
+  width: 250px;
+}
+.container .left{
+  background: var(--brightOrange);
+  color: var(--transparentWhite);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.container .left ,  .container .right, .container .middle{
+  padding: 4rem 1.5rem 2rem 1rem;
+}
+.container .left .btndiv button{
+  background-color: var(--brightOrange);
+  color: var(--transparentWhite);
+}
+.container .left .flex .content > h2, .container .middle .flex .content > h2, .container .right .flex .content > h2{
+  margin: 1rem 0 1rem 0;
+}
+.container .middle{
+  background-color: var(--darkCyan);
+  color: var(--transparentWhite);
+}
+.container .right{
+  background-color: var(--veryDarkCyan);
+  color: var(--transparentWhite);
+}
+.container .right{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.container .left .flex, .container .middle .flex, .container .right .flex{
+  padding-inline : 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .left .flex .content, .container .middle .flex .content, .container .right .flex .content{
+  margin-bottom: 2rem ;
+}
+.container .left .flex .content > h2 , .container .middle .flex .content > h2 ,.container .right .flex .content > h2  {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--veryLightGray);
+}
+.container .left .flex .content > h2{color : var(--headingColor1)}
+.container .left .flex .content p , .container .middle .flex .content p , .container .right .flex .content p{
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color:var(--transparentWhite)
+}
+.container .left .flex .content , .container .middle .flex .content,.container .right .flex .content
+{
+  padding-bottom: 1.2rem;
+}
+.left .btndiv button, .middle .btndiv button , .right .btndiv button{
+  padding:  1rem 2rem;
+  border-radius: 1.6rem;
+  
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+.left .flex .btndiv button{
+ background-color: var(--veryLighgtGrayBtn);
+ color: var(--brightOrange);
+ border: none;
+ font-size: 12px;
+ transition: all 150ms ease;
+}
+.middle .flex .btndiv button{
+  background-color: var(--veryLighgtGrayBtn);
+  color: var(--darkCyan);
+  border: none;
+  font-size: 12px;
+  transition: all 150ms ease;
+}
+.right .flex .btndiv button{
+  background-color: var(--veryLighgtGrayBtn);
+  color: var(--veryDarkCyan);
+  border: none;
+  font-size: 12px;
+  transition: all 150ms ease;
+}
+.right .flex .btndiv button:hover{
+  background-color: var(--veryDarkCyan);
+  color: var(--transparentWhite);
+  border: 1px solid var(--transparentWhite);
+}
+.middle .flex .btndiv button:hover{
+  background-color: var(--darkCyan);
+  color: var(--transparentWhite);
+  border: 1px solid var(--transparentWhite);
+}
+.left .flex .btndiv button:hover{
+  background-color: var(--brightOrange);
+  color: var(--transparentWhite);
+  border: 1px solid var(--transparentWhite);
+}
+.left .btndiv,.middle .btndiv , .right .btndiv {
+  padding-bottom: 0.5rem;
+}
+@media screen and (max-width : 615px){
+  .container .left {
+      border-top-left-radius:0;
+      border-bottom-left-radius:0;
+  }
+  .container .right {
+      border-top-right-radius:0;
+      border-bottom-right-radius:0;
+  }
+}
+  
